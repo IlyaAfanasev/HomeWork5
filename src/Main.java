@@ -41,29 +41,35 @@ public class Main {
     }// task2
 
     public static void task3() {
-        System.out.println("            Задача 3");
-        int year = 2100;
+        System.out.println("            Задача 3.1");
+        int year = 2003;
         int every4Year = year % 4;
         int every400Year = year % 400;
         int every100Year = year % 100;
 
         if (every400Year == 0) {
-             System.out.println("Год является високосным");
+             System.out.println(year +" Год является високосным");
         }
         else if (every100Year ==0){
-            System.out.println("Год не является високосным");
+            System.out.println(year +" Год не является високосным");
         }
         else if (every4Year ==0){
-            System.out.println("Год является високосным");
+            System.out.println(year +" Год является високосным");
         }
         else{
-            System.out.println("Год не является високосным");
+            System.out.println(year +" Год не является високосным");
         }
-
+        System.out.println("            Задача 3.2");
+        if (every4Year ==0 && every100Year !=0 || every400Year ==0) {
+            System.out.println(year +" Год является високосным");
+        }
+        else{
+            System.out.println(year +" Год не является високосным");
+        }
     } //task3
     public static void task4() {
-        System.out.println("            Задача 4");
-         int distance = 95;
+        System.out.println("            Задача 4.1");
+         int distance = 780;
          int days = 0;
          if (distance< 20) {
              days = days +1;
@@ -82,6 +88,20 @@ public class Main {
          else {
              System.out.println("Доставки нет");
          }
+        System.out.println("            Задача 4.2");
+         int days1 = 1;
+         if (distance >= 20) {
+             days1 ++;
+         }
+        if (distance >= 60) {
+            days1 ++;
+        }
+        if (distance <100) {
+            System.out.println("Потребуется дней: "+days1);
+        }
+        else {
+            System.out.println("Доставки нет");
+        }
     }//task4
     public static void task5() {
         System.out.println("            Задача 5");
