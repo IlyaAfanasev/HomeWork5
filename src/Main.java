@@ -3,6 +3,7 @@ public class Main {
        task1();
        task2();
        task3();
+       task4();
     }
     public static void task1() {
         System.out.println ("            Задача 1");
@@ -63,9 +64,28 @@ public class Main {
         }
 
     } //task3
+    public static void task4() {
+        System.out.println("            Задача 4");
+         int distance = 10;
+         int days = 0;
+         if (distance< 20) {
+             days = days +1;
+             System.out.println("Потребуется дней: "+days);
+         }
 
+         else if (distance>=20 && distance <60){
+              days = days +2;
+             System.out.println("Потребуется дней: "+days);
+         }
 
-
+         else if (distance >=60 && distance < 100) {
+             days = days +3;
+                         System.out.println("Потребуется дней: "+days);
+         }
+         else {
+             System.out.println("Доставки нет");
+         }
+    }//task4
 }// класс Main
 
 
