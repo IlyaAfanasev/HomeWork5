@@ -21,23 +21,19 @@ public class Main {
     }// task1
     public static void task2() {
         System.out.println ("            Задача 2");
-        int clientOS = 1;
-        int clientDeviceYear = 2015;
-        if (clientOS ==0) {
-            if (clientDeviceYear >= 2015) {
-                System.out.println("Установите версию приложения для IOS по ссылке");
-            }
-            else {
-                System.out.println("Установите облегченную версию приложения для IOS по ссылке");
-            }
+        int clientOS = 3;
+        int clientDeviceYear = 2012;
+        if (clientOS ==0 && clientDeviceYear >= 2015) {
+                            System.out.println("Установите версию приложения для IOS по ссылке");
         }
-        else  if (clientOS == 1) {
-            if (clientDeviceYear >= 2015) {
-                System.out.println("Установите версию приложения для Android по ссылке");
-            }
-            else {
+        else if (clientOS ==0) {
+                System.out.println("Установите облегченную версию приложения для IOS по ссылке");
+        }
+        else  if (clientOS == 1 && clientDeviceYear >= 2015) {
+                            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+        else if (clientOS == 1)  {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            }
         }
         else {
             System.out.println("Для вашей операционной системы нет приложения");
@@ -67,7 +63,7 @@ public class Main {
     } //task3
     public static void task4() {
         System.out.println("            Задача 4");
-         int distance = 10;
+         int distance = 95;
          int days = 0;
          if (distance< 20) {
              days = days +1;
@@ -89,7 +85,7 @@ public class Main {
     }//task4
     public static void task5() {
         System.out.println("            Задача 5");
-        int monthNumber = 13;
+        int monthNumber = 11;
         switch (monthNumber) {
             case 12:
             case 1:
